@@ -11,4 +11,7 @@
    Filename: mpl_links.js
 
 */
+//select variable that references all of the select elements
+window.addEventListener("load", function() {
 
+})
