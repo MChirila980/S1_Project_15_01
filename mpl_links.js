@@ -12,6 +12,16 @@
 
 */
 //select variable that references all of the select elements
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
 
+    var allSelect = document.getElementsByTagName("select");
+
+    for (var i = 0; i < allSelect.length; i++) {
+
+        allSelect[i].addEventListener("onchange", function (e) {
+            
+            window.location.href = e.target.value;
+        });
+
+    }
 })
